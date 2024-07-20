@@ -1,8 +1,10 @@
 <!doctype html>
 <html>
     <head>
-        <meta name = viewport content = "width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
-        <title>Mystera Legacy</title>
+        <meta name = viewport content = "width=device-width,initial-scale=1">
+        <meta name = description content = "Calculate the materials cost to build structures in the world of Mystera Legacy.">
+
+        <title>Mystera Legacy Base Planner</title>
 
         <style>
             html, body {
@@ -27,7 +29,7 @@
 
             #mats {
                 color: #ddd;
-                flex: 1 0 0;
+                flex: 1 1 0;
                 margin: 0;
                 overflow-y: auto
             }
@@ -45,7 +47,7 @@
                 padding: .5em;
                 background-color: #fff;
                 display: grid;
-                grid-template-columns: repeat(6, 1fr);
+                grid-template-columns: repeat(7, 1fr);
                 gap: .5em
             }
 
@@ -66,21 +68,11 @@
             section {
                 font-size: 12px;
                 color: #888;
-                word-break: break-all;
+                word-break: break-all
             }
 
             span {
                 color: #fff
-            }
-
-            @media screen and (orientation: portrait) {
-                body {
-                    flex-direction: column
-                }
-
-                #left {
-                    flex-direction: row
-                }
             }
         </style>
     </head>
